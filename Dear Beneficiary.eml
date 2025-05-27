@@ -1,0 +1,128 @@
+Delivered-To: surajmishra1826@gmail.com
+Received: by 2002:a05:6a10:4f18:b0:5ec:e9ea:90d1 with SMTP id uo24csp2161796pxb;
+        Sat, 10 May 2025 23:24:36 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCXKY5MPitphrS6DpMLAOhuPUYjj83agsdkYu6idOTsldvkyNaJgehyY+rC+DK5wXMgwwRRqGMdybdqq8sMkCNA=@gmail.com
+X-Received: by 2002:a05:6902:1896:b0:e6d:da84:e901 with SMTP id 3f1490d57ef6-e78fdc95590mr11031620276.27.1746944676082;
+        Sat, 10 May 2025 23:24:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746944676; cv=none;
+        d=google.com; s=arc-20240605;
+        b=U+GrjKtTpDI3vJv+kb0jDrkfX29qoC4fNJeJVK3HTV+rJOXE1QR+20Bwlxq03Z1+kU
+         O5NDe4uQmQUSnn1QRKiTkWBuPb0Fl94mK5u01CmoRA2t8vbtu7jKHuZAiQiC2B/4gQNY
+         pnoUqNvGDaAqTQ/anjWZZ8H2IZBdwnLi5Ttw8gePyboQVNrTabTiuDRZ+nhYQgeSnuWq
+         r8Ff0Iy8JTxpn2EHNR3EwEsjzei4KFLaH9UTAyObuYzc2pnDMg2b/qR+r8nyMD/yZrV0
+         6rpJPgJeYZDn3Odj82ZhTBMY8oVauqAJcwEvseILCZ6kpm1bEv/juDlzH0WUpA76yEpT
+         hEhw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=yQcgxe3+yFX8VmP7eSxI5308YrMGQGS6eAoYmkHOCnI=;
+        fh=05H/ngSJM6RxD+i/9i8r2w+drFFASRGGv6Hp/q5YGQw=;
+        b=WLP/rHYCC1IbIzvTbxrvC6sIfkrdwZ7NPB+y8JZzpFyGL5lPbFmBJPNsIiE4ciCCob
+         Y20MG/Me9hHql7qYFC0kGhYM8TbEkZ2n2/R8Rwr5X0VJceGkOyuvw7vHN7DYCCdh6nWj
+         lh/5gWHDP4vJpGi+HN5XJ5PcRzs/L8eG4AMGJq++Lx6OTOqx3EQJHpwAAfEgwufpS2sP
+         5BO4V58GEjWN8u3tQCfZPS5zNHo+ezQbe7alZaEhOHQqHgaC7p6HJxK9zbwmpAD9SuTR
+         wx9oPoU8VgspDOAV+6DOlCNOG6an8tqiH2sRHzHzMqsPaiVY4JZR/sC2ziJR8yd9fTwg
+         hDNw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=HDB8E0LH;
+       spf=pass (google.com: domain of kimhavid97@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kimhavid97@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <kimhavid97@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 3f1490d57ef6-e7913040ef9sor856960276.4.2025.05.10.23.24.35
+        for <surajmishra1826@gmail.com>
+        (Google Transport Security);
+        Sat, 10 May 2025 23:24:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kimhavid97@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=HDB8E0LH;
+       spf=pass (google.com: domain of kimhavid97@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kimhavid97@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1746944675; x=1747549475; dara=google.com;
+        h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=yQcgxe3+yFX8VmP7eSxI5308YrMGQGS6eAoYmkHOCnI=;
+        b=HDB8E0LHrHHVNDtYfuGl8LL3cOjemF1GOSo+5zBV2BgGr9bO+xCjTwmeh6mPCV7pBv
+         3kCpSRkCigTNjt1N408fpHHiQ747qo7vEalFFEixqa7my4Zbxfj81ezZ+GcNLGPFi29t
+         3WKBVgtP7IQuDujRYF+i6bT6nehleXfUBm4BNRimoCddalsmJ6c6e4EfE39Z8iMUk4V8
+         6NPxI3TpR5YwT7nl/wMlkOM5S+uZfPg9V0hYfX8niumxJY6dyeKJvUwO0Fj1RqhTVIbs
+         u3hJM1mFxl/gcKqCZIeeZDpabaLRYNJK31eMboZVWk6Tyl4SQm8i9rDugk/QXd6mpFLx
+         8y3A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1746944675; x=1747549475;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=yQcgxe3+yFX8VmP7eSxI5308YrMGQGS6eAoYmkHOCnI=;
+        b=Z13F4JwIVr8BmjB8jl3eaNtrNm+mc7kNCBdrimIvWdliFw5t2Snxs7C+OQv7Cl7dRm
+         wmt9isYBWle2DurtelKe/KWyFvrZx20j5L48VIUfQx+UDIZFDU4Q/6Pxd8B1EWb4LLjB
+         h483vY9Py95Mnrhi4Ch5fFYEwtfWpdTCsEf4T8HmXkPiMcQ2dF8qOQzmMCnhOXb7R0fC
+         H81mIbqZfvg5g1aPZvxFynAuBVLWYuTq6ydZAIQ6AK27VbLfE2NivcxWgtg51ZMYQsiF
+         NmyUj4ME9y9LUTAwBWHuUccugI1NkFKkA8XZFUVXOAlKFSLmpmBr7XAeB8AtgbzlhWwv
+         fVUg==
+X-Forwarded-Encrypted: i=1; AJvYcCWQJRslT9EZqAuQTGyCeDVUsD/7hacAo0ve73dOge1kuZr6YaJsflXSi/q9D3ZURK9YMorwClaUCkep4VoHi30=@gmail.com
+X-Gm-Message-State: AOJu0Yyj+U/iSJONOFn+qQ1XMOs5awgovTARtDsOImsfmKtbbKU/2d2U
+	NiYhHTlgsBvAo2+IzobGsq70qwY7iLE7Sfsyq4kJFmLzCyBkaN2vfIMbviwbAPZp9RCePOuY4Gq
+	4GfkQ0mkO/thxVqvEceGiNIFcs/g=
+X-Gm-Gg: ASbGncsov/aS7IHYOvZpm1GRxKFGcw3Heh1Yw2PCeB7kQ75lKD6QCg3UGdo/QrbMAJG
+	39qcWNUBBko8L1trQqVh0iKdQkuWihGf0t9stbZvju8rV456ATjxAS/nVu0L5TEt3VYEbBlBz/O
+	YzfFveFTQ0kdcmO7KFBx3F+zVMryIwjryBKQ==
+X-Google-Smtp-Source: AGHT+IH3rlyuZXJtGY0sognU0aybB0Rep2iT5HuDJiIMro79dUE1ePZAzZDsGg2+pndpoVSuX1EmDeQByreh/ukO0wg=
+X-Received: by 2002:a05:6902:4909:b0:e72:bd1c:ce3a with SMTP id
+ 3f1490d57ef6-e78fdc8c0a3mr12260537276.24.1746944675559; Sat, 10 May 2025
+ 23:24:35 -0700 (PDT)
+MIME-Version: 1.0
+Reply-To: jeuhdhk45@gmail.com
+From: "EUGENE L. DODARO" <kimhavid97@gmail.com>
+Date: Sat, 10 May 2025 23:23:53 -0700
+X-Gm-Features: AX0GCFvmP8k3WMTxoG63tslaByfHMvfSAmWjTMJ0QXXeG34GijhAo2srImYpCd8
+Message-ID: <CAFR7OjKmq4bt7uqipRTex2r84+sqJtsTP-xB9E-DMipT2sAnxg@mail.gmail.com>
+Subject: Dear Beneficiary
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000d4432b0634d640de"
+Bcc: surajmishra1826@gmail.com
+
+--000000000000d4432b0634d640de
+Content-Type: text/plain; charset="UTF-8"
+
+This notice is reaching you from the office of Accountant General of the
+United States of America, This is to inform you on this wonderful good
+news, However an Inheritance Funds valued sum of ($12.750.000.00 USD)
+allocated to your family long ago was recovered by the help of IMF "SDR"
+server and assigned to your favor via Bank Draft Check and has been handed
+over to diplomat Mr Johnny Wills, so kindly contact him,
+
+CONTACAT: Diplomat Below.
+
+Mr. Johnny Wills
+
+E-MAIL:(jeuhdhk45@gmail.com)
+
+Therefore all you need to do now is to contact Diplomat Johnny Wills and
+provide him with your current home addresses for the delivery okay
+
+Best Regards
+Eugene L. Dodaro,
+U.S Accountant/Controller General.
+
+--000000000000d4432b0634d640de
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><br>This notice is reaching you from the office of=
+ Accountant General of the United States of America, This is to inform you =
+on this wonderful good news, However an Inheritance Funds valued sum of ($1=
+2.750.000.00 USD) allocated to your family long ago was recovered by the he=
+lp of IMF &quot;SDR&quot; server and assigned to your favor via Bank Draft =
+Check and has been handed over to diplomat Mr Johnny Wills, so kindly conta=
+ct him,<br><br>CONTACAT: Diplomat Below.<br><br>Mr. Johnny Wills<br><br>E-M=
+AIL:(<a href=3D"mailto:jeuhdhk45@gmail.com">jeuhdhk45@gmail.com</a>)<br><br=
+>Therefore all you need to do now is to contact Diplomat Johnny Wills and p=
+rovide him with your current home addresses for the delivery okay<br><br>Be=
+st Regards<br>Eugene L. Dodaro,<br>U.S Accountant/Controller General.<br><b=
+r><br><br></div>
+
+--000000000000d4432b0634d640de--
